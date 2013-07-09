@@ -13,6 +13,7 @@ set showmatch
 set smartcase
 set tabstop=2
 set ruler
+set backspace=indent,eol,start
 syntax on
 filetype off
 
