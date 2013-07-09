@@ -12,6 +12,7 @@ set noswapfile
 set showmatch
 set smartcase
 set tabstop=2
+set nowrap
 set ruler
 syntax on
 filetype off
@@ -38,3 +39,4 @@ NeoBundle "tpope/vim-rails"
 NeoBundle "Shougo/neocomplcache-rsense.vim"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "ujihisa/unite-rake"
+NeoBundle "ngmy/vim-rubocop"
