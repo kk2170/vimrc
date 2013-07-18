@@ -14,6 +14,8 @@ set smartcase
 set tabstop=2
 set nowrap
 set ruler
+set autoindent
+set smartindent
 set backspace=indent,eol,start
 syntax on
 filetype off
