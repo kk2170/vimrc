@@ -14,11 +14,20 @@ set smartcase
 set tabstop=2
 set nowrap
 set ruler
-set autoindent
+set autoindent sw=2
 set smartindent
 set backspace=indent,eol,start
 syntax on
 filetype off
+
+"=== control code display
+set list
+set listchars=tab:>-,trail:-,extends:>,precedes:<
+au BufRead,BufNew * match JpSpace /　/
+highlight SpecialKey term=underline ctermfg=DarkYellow guifg=DarkYellow
+highlight JpSpace cterm=underline ctermfg=Blue guifg=Blue
+
+
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -36,6 +45,7 @@ if neobundle#exists_not_installed_bundles()
   "finish
 endif
 
+NeoBundle "Align"
 NeoBundle "tpope/vim-endwise"
 NeoBundle "vim-scripts/ruby-matchit"
 NeoBundle "tpope/vim-rails"
