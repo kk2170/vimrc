@@ -17,6 +17,8 @@ set ruler
 set autoindent sw=2
 set smartindent
 set backspace=indent,eol,start
+let g:neocomplcache_enable_at_startup = 1
+
 syntax on
 filetype off
 
@@ -49,7 +51,9 @@ NeoBundle "Align"
 NeoBundle "tpope/vim-endwise"
 NeoBundle "vim-scripts/ruby-matchit"
 NeoBundle "tpope/vim-rails"
+NeoBundle "Shougo/neocomplcache.vim"
 NeoBundle "Shougo/neocomplcache-rsense.vim"
 NeoBundle "Shougo/unite.vim"
 NeoBundle "ujihisa/unite-rake"
 NeoBundle "ngmy/vim-rubocop"
+NeoBundle "scrooloose/nerdtree"
